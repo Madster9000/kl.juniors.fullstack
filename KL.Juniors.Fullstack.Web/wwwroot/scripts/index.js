@@ -60,30 +60,32 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(2);
-module.exports = angular;
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var angular = __webpack_require__(1);
+var usersComponentsModule = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./users/components/users.components.module\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+// styles
+__webpack_require__(3);
+angular
+    .module("kl.juniors.fullstack", [
+    usersComponentsModule.name
+]);
 
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var angular = __webpack_require__(0);
-var usersComponentsModule = __webpack_require__(3);
-angular
-    .module("kl.juniors.fullstack", [
-    usersComponentsModule.name
-]);
+__webpack_require__(2);
+module.exports = angular;
 
 
 /***/ }),
@@ -33982,49 +33984,9 @@ $provide.value("$locale", {
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var angular = __webpack_require__(0);
-var users_table_html_1 = __webpack_require__(4);
-var users_table_component_1 = __webpack_require__(5);
-exports.name = "kl.juniors.fullstack.users.components";
-angular
-    .module(exports.name, [])
-    .component("kljUsersTable", {
-    template: users_table_html_1.default,
-    controller: users_table_component_1.UsersTableComponent
-});
-
-
-/***/ }),
-/* 4 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony default export */ __webpack_exports__["default"] = ("<ul>\r\n    <li ng-repeat=\"user in $ctrl.users track by $index\"\r\n        ng-bind=\"user\"></li>\r\n</ul>");
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var UsersTableComponent = /** @class */ (function () {
-    function UsersTableComponent() {
-        this.users = [
-            "Denis",
-            "Admin"
-        ];
-    }
-    return UsersTableComponent;
-}());
-exports.UsersTableComponent = UsersTableComponent;
-
+throw new Error("Module build failed: ModuleParseError: Module parse failed: Unexpected character '\u0000' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)\n    at doBuild (D:\\MadPlayground\\Juniors\\02.11.17\\KL.Juniors.Fullstack\\KL.Juniors.Fullstack.Web\\node_modules\\webpack\\lib\\NormalModule.js:303:19)\n    at runLoaders (D:\\MadPlayground\\Juniors\\02.11.17\\KL.Juniors.Fullstack\\KL.Juniors.Fullstack.Web\\node_modules\\webpack\\lib\\NormalModule.js:209:11)\n    at D:\\MadPlayground\\Juniors\\02.11.17\\KL.Juniors.Fullstack\\KL.Juniors.Fullstack.Web\\node_modules\\loader-runner\\lib\\LoaderRunner.js:370:3\n    at iterateNormalLoaders (D:\\MadPlayground\\Juniors\\02.11.17\\KL.Juniors.Fullstack\\KL.Juniors.Fullstack.Web\\node_modules\\loader-runner\\lib\\LoaderRunner.js:211:10)\n    at D:\\MadPlayground\\Juniors\\02.11.17\\KL.Juniors.Fullstack\\KL.Juniors.Fullstack.Web\\node_modules\\loader-runner\\lib\\LoaderRunner.js:202:4\n    at D:\\MadPlayground\\Juniors\\02.11.17\\KL.Juniors.Fullstack\\KL.Juniors.Fullstack.Web\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:70:14\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)\n    at process._tickCallback (internal/process/next_tick.js:180:9)");
 
 /***/ })
 /******/ ]);

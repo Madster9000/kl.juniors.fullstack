@@ -5,6 +5,6 @@ export class UsersTableComponent {
         this.users = [
             "Denis",
             "Admin"
-        ];
+        ]
     }
 }

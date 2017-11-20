@@ -1,7 +1,6 @@
 const path = require('path');
 
 module.exports = {
-    watch: true,
     devtool: 'source-map',
     entry: './frontend/main.module.ts',
     module: {
@@ -17,9 +16,6 @@ module.exports = {
                 loader: "html-loader?exportAsEs6Default"
             }
         ]
-    },
-    resolve: {
-        extensions: [".tsx", ".ts", ".js", ".html"]
     },
     output: {
         filename: 'index.js',
