@@ -20,5 +20,8 @@ module.exports = {
     output: {
         filename: 'index.js',
         path: path.resolve(__dirname, 'wwwroot/scripts')
+    },
+    resolve: {
+        extensions: [".tsx", ".ts", ".js", ".html"]
     }
 };

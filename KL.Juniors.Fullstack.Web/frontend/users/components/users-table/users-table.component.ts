@@ -4,7 +4,8 @@ export class UsersTableComponent {
     constructor() {
         this.users = [
             "Denis",
-            "Admin"
+            "Admin",
+            "Test"
         ]
     }
 }
